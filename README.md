@@ -1,7 +1,7 @@
 # Sprint_3_Project
 TripleTen Sprint 3 Final Project
 
-My Sprint 3 project - Sprint Length was 3 weeks.
+My Sprint 3, Statistical Data Analysis, project. Sprint length was 3 weeks.
 
 Instructions as provided by TripleTen:
 
