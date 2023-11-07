@@ -1,9 +1,10 @@
 # Sprint_3_Project
-TripleTen Sprint 3 Final Project
 
-My Sprint 3, Statistical Data Analysis, project. Sprint length was 3 weeks.
+*My Sprint 3, Statistical Data Analysis, project. Sprint length was 3 weeks.*
 
-Instructions as provided by TripleTen:
+***Instructions as provided by TripleTen:***
+
+# SDA: Project
 
 Congratulations! You’ve completed the section on Statistical Data Analysis. It’s time to apply the knowledge and skills you’ve acquired to a project: a real-life analytical case study that you’ll complete on your own.
 
@@ -13,16 +14,23 @@ You might get further feedback on the new version. This is completely normal. It
 
 Your project will be considered complete once the project reviewer approves it.
 
-Project description
+## Coworking Time
+
+In this video, tutor Camilo Arenas will walk through a project similar to this one and give you some tips along the way.
+
+[Coworking Time Video](https://www.youtube.com/watch?v=YbPzGANriMA)
+
+## Project description
 
 You work as an analyst for the telecom operator Megaline. The company offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget.
+
 You are going to carry out a preliminary analysis of the plans based on a relatively small client selection. You'll have the data on 500 Megaline clients: who the clients are, where they're from, which plan they use, and the number of calls they made and text messages they sent in 2018. Your job is to analyze clients' behavior and determine which prepaid plan brings in more revenue.
 
-Description of the plans
+## Description of the plans
 
-Note: Megaline rounds seconds up to minutes, and megabytes to gigabytes. For calls, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For web traffic, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
+Note: Megaline rounds seconds up to minutes, and megabytes to gigabytes. For **calls**, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For **web traffic**, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
 
-Surf
+**Surf**
 
 1. Monthly charge: $20
 2. 500 monthly minutes, 50 texts, and 15 GB of data
@@ -31,7 +39,7 @@ Surf
     - 1 text message: 3 cents
     - 1 GB of data: $10
 
-Ultimate
+**Ultimate**
 
 1. Monthly charge: $70
 2. 3000 monthly minutes, 1000 text messages, and 30 GB of data
@@ -40,18 +48,23 @@ Ultimate
     - 1 text message: 1 cent
     - 1 GB of data: $7
 
-Instructions on completing the project
+## Instructions on completing the project
 
-Step 1. Open the data file and study the general information
+**Step 1. Open the data file and study the general information**
 
 File path:
-/datasets/megaline_calls.csv Download dataset
-/datasets/megaline_internet.csv Download dataset
-/datasets/megaline_messages.csv Download dataset
-/datasets/megaline_plans.csv Download dataset
-/datasets/megaline_users.csv Download dataset
 
-Step 2. Prepare the data
+[/datasets/megaline_calls.csv](https://drive.google.com/file/d/13vmDcZk0GeLvgH9YaJPumHT0yWUCYQ2X/view)
+
+[/datasets/megaline_internet.csv](https://drive.google.com/file/d/1x2zYyFzQbo2uIovUsvX0jOEmTUiONFon/view)
+
+[/datasets/megaline_messages.csv](https://drive.google.com/file/d/1t020XjAxC1wsi7HFm0cnOqvK36wFEG6b/view)
+
+[/datasets/megaline_plans.csv](https://drive.google.com/file/d/1V3x_M8jrWIAjOqyBfdGONXnMGG7SAK7v/view)
+
+[/datasets/megaline_users.csv](https://drive.google.com/file/d/1NwUAiXNWDcxzLkkm8VjOif0Zp_oUcdkB/view)
+
+**Step 2. Prepare the data**
 
 - Convert the data to the necessary types
 - Find and eliminate errors in the data
@@ -65,11 +78,11 @@ For each user, find:
 - The volume of data per month
 - The monthly revenue from each user (subtract the free package limit from the total number of calls, text messages, and data; multiply the result by the calling plan value; add the monthly charge depending on the calling plan)
 
-Step 3. Analyze the data
+**Step 3. Analyze the data**
 
 Describe the customers' behavior. Find the minutes, texts, and volume of data the users of each plan require per month. Calculate the mean, variance, and standard deviation. Plot histograms. Describe the distributions.
 
-Step 4. Test the hypotheses
+**Step 4. Test the hypotheses**
 
 - The average revenue from users of Ultimate and Surf calling plans differs.
 - The average revenue from users in NY-NJ area is different from that of the users from other regions.
@@ -81,57 +94,57 @@ Explain:
 - How you formulated the null and alternative hypotheses.
 - What criterion you used to test the hypotheses and why.
 
-Step 5. Write an overall conclusion
+**Step 5. Write an overall conclusion**
 
-Format: Complete the task in Jupyter Notebook. Put the programming code in code cells and text explanations in markdown cells, then apply formatting and headings.
+**Format:** Complete the task in Jupyter Notebook. Put the programming code in `code` cells and text explanations in `markdown` cells, then apply formatting and headings.
 
-Description of the data
+## Description of the data
 
-Remember! Megaline rounds seconds up to minutes, and megabytes to gigabytes. For calls, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For web traffic, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
+Remember! Megaline rounds seconds up to minutes, and megabytes to gigabytes. For `calls`, each individual call is rounded up: even if the call lasted just one second, it will be counted as one minute. For `web traffic`, individual web sessions are not rounded up. Instead, the total for the month is rounded up. If someone uses 1025 megabytes this month, they will be charged for 2 gigabytes.
 
-The users table (data on users):
+The `users` table (data on users):
 
-- user_id — unique user identifier
-- first_name — user's name
-- last_name — user's last name
-- age — user's age (years)
-- reg_date — subscription date (dd, mm, yy)
-- churn_date — the date the user stopped using the service (if the value is missing, the calling plan was being used when this database was extracted)
-- city — user's city of residence
-- plan — calling plan name
+- *user_id* — unique user identifier
+- *first_name* — user's name
+- *last_name* — user's last name
+- *age* — user's age (years)
+- *reg_date* — subscription date (dd, mm, yy)
+- *churn_date* — the date the user stopped using the service (if the value is missing, the calling plan was being used when this database was extracted)
+- *city* — user's city of residence
+- *plan* — calling plan name
 
-The calls table (data on calls):
+The `calls` table (data on calls):
 
-- id — unique call identifier
-- call_date — call date
-- duration — call duration (in minutes)
-- user_id — the identifier of the user making the call
+- *id* — unique call identifier
+- *call_date* — call date
+- *duration* — call duration (in minutes)
+- *user_id* — the identifier of the user making the call
 
-The messages table (data on texts):
+The `messages` table (data on texts):
 
-- id — unique text message identifier
-- message_date — text message date
-- user_id — the identifier of the user sending the text
+- *id* — unique text message identifier
+- *message_date* — text message date
+- *user_id* — the identifier of the user sending the text
 
-The internet table (data on web sessions):
+The `internet` table (data on web sessions):
 
-- id — unique session identifier
-- mb_used — the volume of data spent during the session (in megabytes)
-- session_date — web session date
-- user_id — user identifier
+- *id* — unique session identifier
+- *mb_used* — the volume of data spent during the session (in megabytes)
+- *session_date* — web session date
+- *user_id* — user identifier
 
-The plans table (data on the plans):
+The `plans` table (data on the plans):
 
-- plan_name — calling plan name
-- usd_monthly_fee — monthly charge in US dollars
-- minutes_included — monthly minute allowance
-- messages_included — monthly text allowance
-- mb_per_month_included — data volume allowance (in megabytes)
-- usd_per_minute — price per minute after exceeding the package limits (e.g., if the package includes 100 minutes, the 101st minute will be charged)
-- usd_per_message — price per text after exceeding the package limits
-- usd_per_gb — price per extra gigabyte of data after exceeding the package limits (1 GB = 1024 megabytes)
+- *plan_name* — calling plan name
+- *usd_monthly_fee* — monthly charge in US dollars
+- *minutes_included* — monthly minute allowance
+- *messages_included* — monthly text allowance
+- *mb_per_month_included* — data volume allowance (in megabytes)
+- *usd_per_minute* — price per minute after exceeding the package limits (e.g., if the package includes 100 minutes, the 101st minute will be charged)
+- *usd_per_message* — price per text after exceeding the package limits
+- *usd_per_gb* — price per extra gigabyte of data after exceeding the package limits (1 GB = 1024 megabytes)
 
-How will my project be evaluated?
+## How will my project be evaluated?
 
 We’ve put together some project assessment criteria. Read over them carefully before you get to work.
 
@@ -148,11 +161,5 @@ Here’s what project reviewers will look at when assessing your project:
 - Whether you follow the project structure and keep the code tidy
 - The conclusions you come to
 - Whether you leave comments at each step
-
-Our Knowledge Base has everything that you’ll need in order to complete the project.
-
-In the video below, we cover some of the common stumbling blocks in completing this project.
-
-https://www.youtube.com/watch?v=MHxU_8d2dGk
 
 Good luck!
